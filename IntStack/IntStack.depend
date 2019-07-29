@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1564388144 source:c:\users\camer\codeblocks\intstack\src\intstack.cpp
+	"IntStack.h"
+
+1564387334 c:\users\camer\codeblocks\intstack\include\intstack.h
+
+1564388386 source:c:\users\camer\codeblocks\intstack\src\main.cpp
+	<iostream>
+	"IntStack.h"
+	<stdlib.h>
+
