@@ -22,8 +22,17 @@ int main() {
     s.push(111);
     s.push(55);
     cout << "size: " << s.getSize() << endl;
-    cout << "peek (should be 55): " << s.peek() << endl;
+    cout << "peek (should be 55): \n" << s.peek() << endl;
 
+
+    IntStack s_copy = s;
+    cout << "Copy contents: \n" << endl;
+    int copystackSize = s_copy.getSize();
+    for (int i = 0; i < copystackSize; i++) {
+        cout << s_copy.pop() << endl;
+    }
+
+    cout << "Original contents: \n" <<endl;
     int stackSize = s.getSize();
     for (int i = 0; i < stackSize; i++) {
         cout << s.pop() << endl;
@@ -39,6 +48,7 @@ int main() {
     cout << "size: " << s.getSize() << endl;
     s.clear();
     cout << "size after clearing: " << s.getSize() << endl;
+
 
     return EXIT_SUCCESS;
 }

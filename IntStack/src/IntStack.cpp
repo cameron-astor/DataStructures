@@ -11,7 +11,20 @@ IntStack::~IntStack() {
 }
 
 IntStack::IntStack(const IntStack& other) {
-    //copy ctor
+    this -> data_ = new int[other.baseArraySize_];
+    this -> baseArraySize_ = other.baseArraySize_;
+    int *cur = other.data_;
+    int *newCur = this -> data_;
+    for (int i = 0; i < other.size_; i++) {
+        *newCur = *cur;
+        newCur++;
+        cur++;
+    }
+    newCur--;
+    this -> top_ = newCur;
+    this -> size_ = other.size_;
+    delete newCur;
+    delete cur;
 }
 
 bool IntStack::isEmpty() const { return size_ == 0; }

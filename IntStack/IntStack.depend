@@ -1,10 +1,20 @@
 # depslib dependency file v1.0
-1564388144 source:c:\users\camer\codeblocks\intstack\src\intstack.cpp
+1564476421 source:c:\users\camer\codeblocks\intstack\src\intstack.cpp
 	"IntStack.h"
 
 1564387334 c:\users\camer\codeblocks\intstack\include\intstack.h
 
-1564388386 source:c:\users\camer\codeblocks\intstack\src\main.cpp
+1564476549 source:c:\users\camer\codeblocks\intstack\src\main.cpp
+	<iostream>
+	"IntStack.h"
+	<stdlib.h>
+
+1564476722 source:c:\users\camer\codeblocks\datastructures\intstack\src\intstack.cpp
+	"IntStack.h"
+
+1564387334 c:\users\camer\codeblocks\datastructures\intstack\include\intstack.h
+
+1564476628 source:c:\users\camer\codeblocks\datastructures\intstack\src\main.cpp
 	<iostream>
 	"IntStack.h"
 	<stdlib.h>
