@@ -1,10 +1,24 @@
 #include <iostream>
-#include "IntStack.h"
 #include <stdlib.h>
+#include "IntStack.h"
+#include "Stack.h"
 
 using namespace std;
 
+void testIntStack();
+void testGenericStack();
+
 int main() {
+
+    testIntStack();
+    testGenericStack();
+
+    return EXIT_SUCCESS;
+}
+
+void testIntStack() {
+
+    cout << "--- INT STACK ---" << endl;
 
     IntStack s;
     cout << "Initial size: " << s.getSize() << endl;
@@ -48,7 +62,11 @@ int main() {
     cout << "size: " << s.getSize() << endl;
     s.clear();
     cout << "size after clearing: " << s.getSize() << endl;
+    cout << "" << endl;
+}
 
+void testGenericStack() {
 
-    return EXIT_SUCCESS;
+    cout << "--- GENERIC STACK ---" << endl;
+
 }
